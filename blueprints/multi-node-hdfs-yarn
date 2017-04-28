@@ -1,1 +1,90 @@
-{"host_groups":[{"name":"master","components":[{"name":"NAMENODE"},{"name":"SECONDARY_NAMENODE"},{"name":"RESOURCEMANAGER"},{"name":"HISTORYSERVER"},{"name":"APP_TIMELINE_SERVER"},{"name":"ZOOKEEPER_SERVER"},{"name":"KAFKA_BROKER"},{"name":"METRICS_COLLECTOR"},{"name":"HIVE_CLIENT"},{"name":"PIG"},{"name":"METRICS_MONITOR"}],"cardinality":"1"},{"name":"slave_1","components":[{"name":"DATANODE"},{"name":"PIG"},{"name":"HDFS_CLIENT"},{"name":"NODEMANAGER"},{"name":"YARN_CLIENT"},{"name":"MAPREDUCE2_CLIENT"},{"name":"ZOOKEEPER_CLIENT"},{"name":"METRICS_MONITOR"}],"cardinality":"1+"}],"Blueprints":{"blueprint_name":"hadoop_cluster","stack_name":"HDP","stack_version":"2.5"}}
+{
+  "host_groups": [
+    {
+      "name": "master",
+      "components": [
+        {
+          "name": "NAMENODE"
+        },
+        {
+          "name": "SECONDARY_NAMENODE"
+        },
+        {
+          "name": "RESOURCEMANAGER"
+        },
+        {
+          "name": "HISTORYSERVER"
+        },
+        {
+          "name": "APP_TIMELINE_SERVER"
+        },
+        {
+          "name": "ZOOKEEPER_SERVER"
+        },
+        {
+          "name": "KAFKA_BROKER"
+        },
+        {
+          "name": "WEBHCAT_SERVER"
+        },
+        {
+          "name": "HCAT"
+        },
+        {
+          "name": "HIVE_SERVER"
+        },
+        {
+          "name": "HIVE_METASTORE"
+        },
+        {
+          "name": "METRICS_COLLECTOR"
+        },
+        {
+          "name": "HIVE_CLIENT"
+        },
+        {
+          "name": "PIG"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        }
+      ],
+      "cardinality": "1"
+    },
+    {
+      "name": "slave_1",
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "PIG"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        }
+      ],
+      "cardinality": "1+"
+    }
+  ],
+  "Blueprints": {
+    "blueprint_name": "hadoop_cluster",
+    "stack_name": "HDP",
+    "stack_version": "2.5"
+  }
+}
