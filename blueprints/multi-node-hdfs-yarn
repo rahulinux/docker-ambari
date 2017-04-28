@@ -64,6 +64,9 @@
           "name": "ZOOKEEPER_CLIENT"
         },
         {
+          "name" : "HIVE_CLIENT"
+        }
+        {
           "name" : "METRICS_MONITOR"
         }
       ],
