@@ -1,13 +1,19 @@
 {
   "host_groups": [
     {
-      "name": "host_group_client_1",
+      "name": "host_group_slave_1",
       "configurations": [
         
       ],
       "components": [
         {
           "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "NODEMANAGER"
         },
         {
           "name": "PIG"
@@ -37,49 +43,7 @@
           "name": "MAPREDUCE2_CLIENT"
         }
       ],
-      "cardinality": "1"
-    },
-    {
-      "name": "host_group_master_3",
-      "configurations": [
-        
-      ],
-      "components": [
-        {
-          "name": "ZOOKEEPER_SERVER"
-        },
-        {
-          "name": "APP_TIMELINE_SERVER"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "SECONDARY_NAMENODE"
-        }
-      ],
-      "cardinality": "1"
-    },
-    {
-      "name": "host_group_slave_1",
-      "configurations": [
-        
-      ],
-      "components": [
-        {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "DATANODE"
-        }
-      ],
-      "cardinality": "6"
+      "cardinality": "1+"
     },
     {
       "name": "host_group_master_2",
@@ -87,6 +51,12 @@
         
       ],
       "components": [
+        {
+        "name": "SECONDARY_NAMENODE"
+        },
+        {
+          "name": "APP_TIMELINE_SERVER"
+        },
         {
           "name": "ZOOKEEPER_SERVER"
         },
