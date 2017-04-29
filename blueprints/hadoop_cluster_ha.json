@@ -140,6 +140,9 @@
         {
           "name": "HISTORYSERVER"
         }
+        {
+          "name" : "MYSQL_SERVER"
+        }
       ],
       "cardinality": "1"
     }
