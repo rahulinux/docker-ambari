@@ -13,10 +13,13 @@
           "name": "WEBHCAT_SERVER"
         },
         {
-          "name": "ZOOKEEPER_SERVER"
+          "name": "RESOURCEMANAGER"
         },
         {
-          "name": "HCAT"
+          "name": "HISTORYSERVER"
+        },
+        {
+          "name": "APP_TIMELINE_SERVER"
         },
         {
           "name": "HIVE_SERVER"
@@ -26,9 +29,6 @@
         },
         {
           "name": "METRICS_COLLECTOR"
-        },
-        {
-          "name": "HIVE_CLIENT"
         },
         {
           "name": "PIG"
@@ -46,16 +46,7 @@
           "name": "DATANODE"
         },
         {
-          "name": "RESOURCEMANAGER"
-        },
-        {
-          "name": "HISTORYSERVER"
-        },
-        {
-          "name": "APP_TIMELINE_SERVER"
-        },
-        {
-          "name": "KAFKA_BROKER"
+          "name": "ZOOKEEPER_SERVER"
         },
         {
           "name": "PIG"
@@ -64,34 +55,7 @@
           "name": "HDFS_CLIENT"
         },
         {
-          "name": "NODEMANAGER"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
-        },
-        {
-          "name": "ZOOKEEPER_CLIENT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        }
-      ],
-      "cardinality": "1"
-    },
-    {
-      "name": "slave_2",
-      "components": [
-        {
-          "name": "DATANODE"
-        },
-        {
-          "name": "PIG"
-        },
-        {
-          "name": "HDFS_CLIENT"
+          "name": "HCAT"
         },
         {
           "name": "NODEMANAGER"
