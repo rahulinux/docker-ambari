@@ -25,6 +25,9 @@
           "name": "HIVE_SERVER"
         },
         {
+          "name": "KAFKA_BROKER"
+        },
+        {
           "name": "HIVE_METASTORE"
         },
         {
