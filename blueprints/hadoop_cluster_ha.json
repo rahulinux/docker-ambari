@@ -1,4 +1,15 @@
 {
+  "configurations" : [
+    {
+      "hadoop-env" : {
+        "properties" : {
+          "namenode_heapsize" : "1512m",
+          "namenode_opt_maxnewsize" : "512m",
+          "namenode_opt_maxpermsize" : "1512m",
+         }
+        }
+      }
+  ],
   "host_groups": [
     {
       "name": "slave_1",
