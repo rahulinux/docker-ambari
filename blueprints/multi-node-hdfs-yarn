@@ -10,22 +10,10 @@
           "name": "SECONDARY_NAMENODE"
         },
         {
-          "name": "RESOURCEMANAGER"
-        },
-        {
-          "name": "HISTORYSERVER"
-        },
-        {
-          "name": "APP_TIMELINE_SERVER"
+          "name": "WEBHCAT_SERVER"
         },
         {
           "name": "ZOOKEEPER_SERVER"
-        },
-        {
-          "name": "KAFKA_BROKER"
-        },
-        {
-          "name": "WEBHCAT_SERVER"
         },
         {
           "name": "HCAT"
@@ -53,6 +41,48 @@
     },
     {
       "name": "slave_1",
+      "components": [
+        {
+          "name": "DATANODE"
+        },
+        {
+          "name": "RESOURCEMANAGER"
+        },
+        {
+          "name": "HISTORYSERVER"
+        },
+        {
+          "name": "APP_TIMELINE_SERVER"
+        },
+        {
+          "name": "KAFKA_BROKER"
+        },
+        {
+          "name": "PIG"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "NODEMANAGER"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        },
+        {
+          "name": "ZOOKEEPER_CLIENT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        }
+      ],
+      "cardinality": "1"
+    },
+    {
+      "name": "slave_2",
       "components": [
         {
           "name": "DATANODE"
