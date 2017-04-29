@@ -46,6 +46,36 @@
       "cardinality": "1+"
     },
     {
+      "name": "master_1",
+      "configurations": [
+        
+      ],
+      "components": [
+        {
+          "name": "ZOOKEEPER_SERVER"
+        },
+        {
+          "name": "KAFKA_BROKER"
+        },
+        {
+          "name": "NAMENODE"
+        },
+        {
+          "name": "HDFS_CLIENT"
+        },
+        {
+          "name": "YARN_CLIENT"
+        },
+        {
+          "name": "METRICS_MONITOR"
+        },
+        {
+          "name": "MAPREDUCE2_CLIENT"
+        }
+      ],
+      "cardinality": "1"
+    },
+    {
       "name": "master_2",
       "configurations": [
         
@@ -95,39 +125,9 @@
         },
         {
           "name": "WEBHCAT_SERVER"
-        }
-      ],
-      "cardinality": "1"
-    },
-    {
-      "name": "master_1",
-      "configurations": [
-        
-      ],
-      "components": [
-        {
-          "name": "ZOOKEEPER_SERVER"
         },
         {
           "name": "HISTORYSERVER"
-        },
-        {
-          "name": "KAFKA_BROKER"
-        },
-        {
-          "name": "NAMENODE"
-        },
-        {
-          "name": "HDFS_CLIENT"
-        },
-        {
-          "name": "YARN_CLIENT"
-        },
-        {
-          "name": "METRICS_MONITOR"
-        },
-        {
-          "name": "MAPREDUCE2_CLIENT"
         }
       ],
       "cardinality": "1"
