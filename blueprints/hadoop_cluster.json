@@ -130,7 +130,7 @@
     }
   ],
   "Blueprints": {
-    "blueprint_name": "hadoop_cluster_ha",
+    "blueprint_name": "hadoop_cluster",
     "stack_name": "HDP",
     "stack_version": "2.5"
   }
