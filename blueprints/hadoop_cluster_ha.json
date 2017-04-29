@@ -1,7 +1,7 @@
 {
   "host_groups": [
     {
-      "name": "host_group_slave_1",
+      "name": "slave_1",
       "configurations": [
         
       ],
@@ -46,7 +46,7 @@
       "cardinality": "1+"
     },
     {
-      "name": "host_group_master_2",
+      "name": "master_2",
       "configurations": [
         
       ],
@@ -100,7 +100,7 @@
       "cardinality": "1"
     },
     {
-      "name": "host_group_master_1",
+      "name": "master_1",
       "configurations": [
         
       ],
